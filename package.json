@@ -1,0 +1,13 @@
+{
+  "name": "nextjs-plus-strapi-error",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "yarn create next-app apps/front-end --ts --tailwind --eslint --src-dir --app --import-alias \"@/*\" && yarn install --force && cd apps/front-end && yarn lint",
+    "reset": "rm -rf ./apps/back-end/node_modules; rm -rf ./apps/front-end; rm -rf ./node_modules; rm yarn.lock"
+  }
+}
